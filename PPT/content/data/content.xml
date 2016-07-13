@@ -1,0 +1,1142 @@
+<zuiprezi>
+  <version>10</version>
+  <zui-table>
+    <settings>
+      
+      <autoplay>
+        
+        <delay>4000</delay>
+        
+      </autoplay>
+      
+      <bounds x="-295028.80449545465" y="-132454.92730828415" width="590057.6089909093" height="264909.8546165683"/>
+      <aspectratio>off</aspectratio>
+      <languages>
+        <language>en</language>
+      </languages>
+      <spellcheck active="false"/>
+      <mode type="normal"/>
+    </settings>
+    <object id="1_24309637" type="button" x="0" y="7.842758182058819e-12" r="0" s="402.6597577391219" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>1466.7446633136074</w>
+        <h>659.2407715250547</h>
+      </size>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>network-locked</parentTemplate>
+      </meta>
+      <layout>
+        <frametype value="OVERVIEW"/>
+      </layout>
+    </object>
+    <object id="4_24309637" type="button" x="33842.371613043884" y="36514.90788392628" r="-1.3777449072832217e-15" s="18.222155272304857" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>network-locked</parentTemplate>
+      </meta>
+      <layout>
+        <frametype value="SECTION"/>
+      </layout>
+    </object>
+    <object id="8_24309637" type="button" x="74266.40111962533" y="-12008.759270286013" r="1.767257330264813e-15" s="18.8457859197583" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>network-locked</parentTemplate>
+      </meta>
+      <layout>
+        <frametype value="SECTION"/>
+      </layout>
+    </object>
+    <object id="9_24309637" type="button" x="-23.281478217773113" y="-29381.712271475037" r="0" s="20.78712904653007" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>network-locked</parentTemplate>
+      </meta>
+      <layout>
+        <frametype value="SECTION"/>
+      </layout>
+    </object>
+    <object id="10_24309637" type="button" x="-74294.14889109004" y="-3775.795565494109" r="-1.3777449072832219e-15" s="22.482947182955026" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>network-locked</parentTemplate>
+      </meta>
+      <layout>
+        <frametype value="SECTION"/>
+      </layout>
+    </object>
+    <object id="12_4" type="text" x="-74110.89059054054" y="-4497.967347895296" r="-6.249487179358377e-16" s="65.97140427499859" class="head head-background">
+      <height>55.1953125</height>
+      <width>220.4993900181616</width>
+      <p align="center">
+        <text color="6557470"><![CDATA[DEFAULT]]></text>
+      </p>
+      <p align="center">
+        <text color="6557470"><![CDATA[GATEWAY]]></text>
+      </p>
+      <layout>
+        <layout-element role="title" parent-id="10_24309637"/>
+      </layout>
+    </object>
+    <object id="26_24309637" type="text" x="74218.10537907408" y="-16239.953530784293" r="-1.3777449072832215e-15" s="41.54690589726532" class="head">
+      <height>27.59765625</height>
+      <width>220.4993900181616</width>
+      <p align="center">
+        <text color="0"><![CDATA[ALGORITHM]]></text>
+      </p>
+      <layout>
+        <layout-element role="title" parent-id="8_24309637"/>
+      </layout>
+    </object>
+    <object id="66_24309637" type="text" x="75529.40119706927" y="-12004.993088683386" r="-1.3777449072832227e-15" s="11.101432150642815" class="body">
+      <height>551.953125</height>
+      <width>1299.0740200700436</width>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[Initially set min to a large value which is equivalent infinity]]></text>
+      </p>
+      <p indent="4">
+        <text color="0"><![CDATA[min=999;]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[Store the Source and Destination routers ]]></text>
+      </p>
+      <p indent="4">
+        <text color="0"><![CDATA[src=x;     des=y;]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[Check whether min is greater than Distance to a particular node and the node is not visited]]></text>
+      </p>
+      <p indent="3">
+        <text color="0"><![CDATA[      if(min>distance[k][j] && visited[k][j]!=1) ]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[If this is satisfied, min value is updated to the lesser cost distance]]></text>
+      </p>
+      <p indent="3">
+        <text color="0"><![CDATA[      min=distance[k][j]; ]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[Minimum distance node is assigned to nextnode.]]></text>
+      </p>
+      <p indent="3">
+        <text color="0"><![CDATA[      nextnode=j;]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[ Visited from source to next node is changed to 1.]]></text>
+      </p>
+      <p indent="3">
+        <text color="0"><![CDATA[      visited[k][nextnode]=1;]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[If the given node is not visited then check whether the min value and cost for nextnode is less than distance ]]></text>
+      </p>
+      <p indent="2">
+        <text color="0"><![CDATA[           if(visited[k][c]!=1)        ]]></text>
+      </p>
+      <p indent="3">
+        <text color="0"><![CDATA[      if(min+matrix[nextnode][c]<distance[k][c]) ]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[If the condition satisfies the distance is updated with min + cost of the nextnode and pred stores the path traversed(Shortest path).]]></text>
+      </p>
+      <p indent="3">
+        <text color="0"><![CDATA[     distance[k][c]=min+matrix[nextnode][c];  ]]></text>
+      </p>
+      <p indent="1">
+        <text color="0"><![CDATA[                pred[k][c]=nextnode; ]]></text>
+      </p>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+      <layout>
+        <layout-element role="body" parent-id="8_24309637"/>
+      </layout>
+    </object>
+    <object id="6_24309637" type="shape" x="44932.84689029261" y="-45581.98590722739" r="-38.72537394530624" s="104.86080044649968" class="line3">
+      <geom type="line">
+        <sp>358.56201307111877 -113.87097123618979</sp>
+        <ep>-358.5620130711187 -113.87097123618993</ep>
+        <b>-227.74194247237972</b>
+        <t>8</t>
+      </geom>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>network-locked</parentTemplate>
+      </meta>
+    </object>
+    <object id="0_24309637" type="button" x="70133.20200442032" y="-87324.06342645966" r="0" s="24.235425337507547" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>network-locked</parentTemplate>
+      </meta>
+      <layout>
+        <frametype value="SECTION"/>
+      </layout>
+    </object>
+    <object id="3_24309637" type="text" x="70222.63463954558" y="-87146.39343540886" r="0" s="18.957585515944423" class="body">
+      <height>524.35546875</height>
+      <width>759.854124747582</width>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[The main purpose is to implement the Link-State routing protocol using a program. The program’s main goals are as follows:]]></text>
+      </p>
+      <p indent="2">
+        <text color="0"><![CDATA[1) Building a path from one router to another with the given topology matrix.]]></text>
+      </p>
+      <p indent="2">
+        <text color="0"><![CDATA[2) Generating routing tables .]]></text>
+      </p>
+      <p indent="2">
+        <text color="0"><![CDATA[3) Finding the optimal least cost path given source and destination ]]></text>
+      </p>
+      <p indent="2">
+        <text color="0"><![CDATA[4) Using Dijkstra’s algorithm, obtain the shortest path as well as the direction .]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[Java and Applets are used to obtain both the logical and graphical representation of this project.]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[In the code, we use 2-dimension arrays to store original routing table, the distance between routers, values of distance during shortest path calculation, final table after calculation. ]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[Integer values are used for routers representation; ]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[the numbers of routers are limited to 100 routers. ]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[The program interface displays an applet through which output is shown]]></text>
+      </p>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+      <layout>
+        <layout-element role="body"/>
+      </layout>
+    </object>
+    <object id="5_24309637" type="shape" x="-39434.130356025235" y="-19596.579139077603" r="-15.000000000000007" s="104.8608004464997" class="line3">
+      <geom type="line">
+        <sp>302.85186662498 0</sp>
+        <ep>-302.85186662498006 0</ep>
+        <t>8</t>
+      </geom>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>network-locked</parentTemplate>
+      </meta>
+    </object>
+    <object id="7_24309637" type="shape" x="36782.67065450653" y="-18066.25295091093" r="13.073408079888443" s="104.86080044649964" class="line3">
+      <geom type="line">
+        <sp>290.3766237808596 0</sp>
+        <ep>-290.37662378085963 0</ep>
+        <t>8</t>
+      </geom>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>network-locked</parentTemplate>
+      </meta>
+    </object>
+    <object id="11_24309637" type="shape" x="-22465.562360979453" y="-54472.354444541415" r="48.23849849577966" s="104.86080044649954" class="line3">
+      <geom type="line">
+        <sp>-246.07898899995692 0</sp>
+        <ep>246.07898899995692 0</ep>
+        <t>8</t>
+      </geom>
+      <meta>
+        <notModifiedByUser>from-template</notModifiedByUser>
+        <parentTemplate>network-locked</parentTemplate>
+      </meta>
+    </object>
+    <object id="0_13415665" type="text" x="33840.20052011998" y="32371.532116797378" r="-1.3777449072832219e-15" s="40.17206677223656" class="head">
+      <height>27.59765625</height>
+      <width>220.4993900181616</width>
+      <p align="center">
+        <text color="0"><![CDATA[INTRODUCTION]]></text>
+      </p>
+      <layout>
+        <layout-element role="title" parent-id="4_24309637"/>
+      </layout>
+    </object>
+    <object id="0_30863873" type="text" x="-161690.6127745743" y="-55349.22062139533" r="0" s="400.04457102325296" class="head">
+      <height>55.1953125</height>
+      <width>273.84446836310707</width>
+      <p>
+        <text><![CDATA[Link State Routing Protocol]]></text>
+      </p>
+    </object>
+    <object id="0_20134445" type="image" x="144.23163597858644" y="-31339.55796966405" r="0" s="14.46378318304602">
+      <source w="702" h="469">2756792317<url>2756792317.png</url></source>
+      <resource>
+        <id>2756792317</id>
+        <url>http://0103.static.prezi.com.s3.amazonaws.com/media/c/c/e/23f9295280d9c9272e60927165e15da001072.png</url>
+      </resource>
+      <sourceUrl>http://0103.static.prezi.com.s3.amazonaws.com/media/c/c/e/23f9295280d9c9272e60927165e15da001072.png</sourceUrl>
+    </object>
+    <object id="1_20134445" type="text" x="435.3003612072027" y="-25926.413402018403" r="0" s="21.720841084757158" class="body">
+      <height>137.98828125</height>
+      <width>423.529193254808</width>
+      <p>
+        <text weight="bold"><![CDATA[]]></text>
+      </p>
+      <p>
+        <text color="0"><![CDATA[-Dheeraj Prajwal B V (A20329437)]]></text>
+      </p>
+      <p>
+        <text color="0"><![CDATA[-Praninder Gupta V (A20330107)]]></text>
+      </p>
+      <p>
+        <text color="0"><![CDATA[-Sahith Kumar Andel (A20329614)]]></text>
+      </p>
+      <p>
+        <text color="0"><![CDATA[-Anilraj Chennuru (A20328762)]]></text>
+      </p>
+    </object>
+    <object id="2_20134445" type="text" x="-85449.2280241705" y="87171.43856593703" r="0" s="285.74612215946644" class="head">
+      <height>27.59765625</height>
+      <width>232.5565395054282</width>
+      <p>
+        <text color="0"><![CDATA[CS542-02 PROJECT]]></text>
+      </p>
+    </object>
+    <object id="7_20134445" type="text" x="33842.68176917587" y="37101.41312950163" r="7.579463084769657e-31" s="21.48482464151322" class="body">
+      <height>358.76953125</height>
+      <width>474.90234375</width>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[Link State Protocols are one of the two main protocols used in packet switching networks]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[Built around E W Dijkstra's algorithm from graph theory]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[Every switching node performs the Link state Routing Protocol.]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[Every router has information about every other router in the neighborhood and passes the routing information to others without changing.]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[Each Router calculates its own best path]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text color="0"><![CDATA[Eg: OSPF(Open Shortest Path First)]]></text>
+      </p>
+    </object>
+    <object id="0" type="text" x="70225.27298829716" y="-93141.08695001708" r="0" s="41.03223266442785" class="head">
+      <height>27.59765625</height>
+      <width>296.48545262912177</width>
+      <p align="center">
+        <text color="0"><![CDATA[CODE IMPLEMENTATION]]></text>
+      </p>
+    </object>
+    <object id="1" type="button" x="-45996.43461406092" y="-79161.42751693346" r="0" s="21.173314228892522" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="2" type="shape" x="16358.614147443954" y="4354.258889569586" r="62.388499029368525" s="146.8051206250993" class="line3">
+      <geom type="line">
+        <sp>-197.76063278375813 0</sp>
+        <ep>197.76063278375813 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="3" type="shape" x="71619.88214669267" y="-48576.55673253325" r="-93.20776037090148" s="74.90057174749968" class="line3">
+      <geom type="line">
+        <sp>386.95859609135704 0</sp>
+        <ep>-386.958596091357 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="4" type="shape" x="77853.5591369378" y="-16374.911633558597" r="-72.77068015899967" s="104.86080044649962" class="line3">
+      <geom type="line">
+        <sp>565.306013544329 -199.37296952463737</sp>
+        <ep>-565.3060135443288 -199.37296952463737</ep>
+        <b>-398.74593904927474</b>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="6" type="shape" x="-61691.53893406128" y="-42068.81353376259" r="-68.33115397348773" s="104.86080044649967" class="line3">
+      <geom type="line">
+        <sp>301.98853661828923 0</sp>
+        <ep>-301.98853661828923 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="7" type="image" x="-46047.16285982633" y="-78832.27037679648" r="0" s="17.645921503900073">
+      <source w="504" h="647">2757381160<url>2757381160.PNG</url></source>
+      <resource>
+        <id>2757381160</id>
+        <url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/0/9/8c6b1f08f8e82d0f85c322ca2bde3d50d8d30.PNG</url>
+      </resource>
+      <sourceUrl>correctoutput.PNG</sourceUrl>
+    </object>
+    <object id="8" type="text" x="-46062.15075062067" y="-85348.02171383683" r="0" s="46.11658705947015" class="head">
+      <height>27.59765625</height>
+      <width>-78.6328125</width>
+      <p>
+        <text color="0"><![CDATA[Output]]></text>
+      </p>
+    </object>
+    <object id="9" type="shape" x="9895.622922049051" y="-93628.7706701573" r="-2.1182858736850396" s="104.86080044649972" class="line3">
+      <geom type="line">
+        <sp>480.5214858219417 58.9717304047805</sp>
+        <ep>-480.5214858219417 58.971730404780686</ep>
+        <b>117.9434608095612</b>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="12" type="button" x="147283.86369495722" y="-30103.1537631964" r="0" s="10.331968222945576" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="11" type="button" x="130535.5" y="6528.85" r="0" s="10.331968222945576" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="10" type="button" x="156642.30430204328" y="28894.946954540173" r="0" s="10.331968222945576" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="13" type="button" x="147288.185226084" y="-60656.64502522905" r="0" s="11.457839624123924" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="15" type="button" x="147177.32055931195" y="-60651.1888518447" r="-90.60551189180573" s="4.735078576705095" class="invisible">
+      <type>invisible</type>
+      <size>
+        <w>576.1265789402446</w>
+        <h>576.9830980455088</h>
+      </size>
+      <layout>
+        <frametype value="OVERVIEW"/>
+      </layout>
+    </object>
+    <object id="16" type="button" x="147172.48121585356" y="-60646.40614270134" r="-90.60551189180573" s="3.299853658109813" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <parentObjlib>growth</parentObjlib>
+      </meta>
+      <layout>
+        <frametype value="OVERVIEW"/>
+      </layout>
+    </object>
+    <object id="17" type="button" x="147178.28116957715" y="-60101.267851711265" r="-90.60551189180573" s="1.2338274860464218" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <parentObjlib>growth</parentObjlib>
+      </meta>
+      <layout>
+        <frametype value="OVERVIEW"/>
+      </layout>
+    </object>
+    <object id="18" type="button" x="147180.3390567821" y="-59910.38068776392" r="-90.60551189180573" s="0.4815265747225235" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+      <meta>
+        <parentObjlib>growth</parentObjlib>
+      </meta>
+    </object>
+    <object id="19" type="text" x="147097.8480323652" y="-59907.82076141039" r="-90.60551189180573" s="1.0615603600831809" class="strong">
+      <height>55.1953125</height>
+      <width>220.4993900181616</width>
+      <p align="center">
+        <text><![CDATA[Shortest Path Algorithm ( )]]></text>
+      </p>
+      <layout>
+        <layout-element role="title" parent-id="18"/>
+      </layout>
+    </object>
+    <object id="20" type="text" x="147155.65919292363" y="-59937.13113390769" r="-90.60551189180573" s="0.4375106926797071" class="head">
+      <height>27.59765625</height>
+      <width>390.9237784827681</width>
+      <p>
+        <text><![CDATA[Routing Table Generated()]]></text>
+      </p>
+      <layout>
+        <layout-element role="body" parent-id="18"/>
+      </layout>
+    </object>
+    <object id="21" type="text" x="147134.91561213933" y="-60370.452396026005" r="-179.66968517041002" s="1.4292723127036226" class="head">
+      <height>27.59765625</height>
+      <width>221.95000000000005</width>
+      <p>
+        <text><![CDATA[NODE Created( )]]></text>
+      </p>
+    </object>
+    <object id="22" type="text" x="146400.8781238134" y="-60726.08462659634" r="-90.60551189180573" s="3.9012322629706544" class="head">
+      <height>27.59765625</height>
+      <width>279.8991448170463</width>
+      <p>
+        <text><![CDATA[CONNECTION.OPEN ( )]]></text>
+      </p>
+    </object>
+    <object id="4_20134445" type="button" x="147249.35000000003" y="-59909.450000000004" r="-90.60551189180573" s="0.20954038090858662" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="23" type="button" x="147253.1792020745" y="-59906.57252072462" r="-90.60551189180573" s="0.08755028631318612" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="24" type="text" x="147252.5902444748" y="-59905.78724392515" r="178.81928017538056" s="0.24539899984152572" class="head">
+      <height>27.59765625</height>
+      <width>238.4</width>
+      <p>
+        <text><![CDATA[Connection.Close( )]]></text>
+      </p>
+    </object>
+    <object id="25" type="text" x="148015.50538317068" y="-63416.363186984" r="0" s="15.705535989857653" class="head">
+      <height>55.1953125</height>
+      <width>262.7578125</width>
+      <p>
+        <text><![CDATA[Graphical Representation]]></text>
+      </p>
+    </object>
+    <object id="26" type="text" x="156589.2392291303" y="29034.114878380748" r="0" s="8.98950924244265" class="body">
+      <height>607.1484375</height>
+      <width>552</width>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[SPF algorithm - Link-State routing protocols are designed around Dijkstra's Shortest Path First Algorithm (SPF) in which the shortest path from point A to point B is build around a metric of cost.]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[Cost metric - SPF algorithm finds the shortest path based on a metric network link costs. Each router measures the cost of its own directly connected networks or "links." Cost is a measure of the quality of a link based mostly on bandwidth.]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[Hello packets - Link-State routing protocols establish adjacencies with neighboring routers using hello packets.]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[Link State Packets (LSP) - Initial flooding of link-states to all routers in the network.]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[Topology or SPF Tree - Link-State routing protocols build and maintain a complete map or topology of the network area. ]]></text>
+      </p>
+      <p>
+        <text><![CDATA[ ]]></text>
+      </p>
+    </object>
+    <object id="27" type="text" x="130533.66675358202" y="6993.026864174876" r="0" s="9.130925173179717" class="head">
+      <height>579.55078125</height>
+      <width>582.4175690406951</width>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[Faster Convergence - Unlike Distance Vector routing protocols which run algorithm calculations before sending updates, Link-State routing protocols send link-state updates to all routers in the network before running route calculations]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[Triggered Updates - Unlike Distance Vector routing protocols which send periodic updates at regular intervals, Link-State routing protocols send LSPs during router startup (flooding) and when a link changes states like going up or down. If their are no changes in the network the protocol only sends hello packets to maintain adjacencies.]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[Scalability - Link-State routing protocols support the ability to configure multiple routing "areas" which allows an administrator to segment a routing protocol processes to defined areas which supports the expansion and troubleshooting of much larger networks. ]]></text>
+      </p>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+    </object>
+    <object id="28" type="text" x="147205.4366833374" y="-30245.034092068305" r="0" s="11.462186073111623" class="body">
+      <height>220.78125</height>
+      <width>552</width>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[Greater Processing Requirements - Link-State routing protocols typically demand greater processing power and memory resources from the router.]]></text>
+      </p>
+      <p listType="bullet" indent="1">
+        <text><![CDATA[Greater Administrator Knowledge - Link-State routing protocols can demand advanced administrator knowledge to configure and troubleshoot the network area]]></text>
+      </p>
+    </object>
+    <object id="29" type="text" x="147274.73736089267" y="-32386.778403085205" r="0" s="15.705535989857653" class="head">
+      <height>27.59765625</height>
+      <width>-290.765625</width>
+      <p>
+        <text><![CDATA[LInk State Disadvantages]]></text>
+      </p>
+    </object>
+    <object id="30" type="text" x="156744.62587583" y="26375.167635297847" r="0" s="15.705535989857653" class="head">
+      <height>27.59765625</height>
+      <width>-296.109375</width>
+      <p>
+        <text><![CDATA[Link-State Characteristics]]></text>
+      </p>
+    </object>
+    <object id="31" type="text" x="130535.72810518065" y="3794.4661413117005" r="0" s="13.368587546052428" class="head">
+      <height>27.59765625</height>
+      <width>-257.8359375</width>
+      <p>
+        <text><![CDATA[Link-State Advantages]]></text>
+      </p>
+    </object>
+    <object id="32" type="button" x="182284.73291268383" y="-12349.262948825075" r="0" s="12.144360951921861" class="circle">
+      <type>circle</type>
+      <size>
+        <w>800</w>
+        <h>800</h>
+      </size>
+    </object>
+    <object id="33" type="text" x="182246.15618990877" y="-15206.296264580054" r="0" s="31.411071979715306" class="head">
+      <height>27.59765625</height>
+      <width>-129.41015625</width>
+      <p>
+        <text><![CDATA[References]]></text>
+      </p>
+    </object>
+    <object id="34" type="text" x="182718.20570600394" y="-12735.32465537576" r="0" s="9.684116802452621" class="body">
+      <height>386.3671875</height>
+      <width>872.4021170169348</width>
+      <p>
+        <text><![CDATA[[1]Dijkstra’s original paper:]]></text>
+      </p>
+      <p>
+        <text><![CDATA[E. W. Dijkstra. (1959) A Note on Two Problems in Connection with Graphs. Numerische Mathematik, 1.269-271.]]></text>
+      </p>
+      <p>
+        <text><![CDATA[[2]MIT OpenCourseware, 6.046J Introduction to Algorithms.]]></text>
+      </p>
+      <p>
+        <text><![CDATA[< http://ocw.mit.edu/OcwWeb/Electrical-Engineering-and-Computer-Science/6-046JFall-2005/CourseHome/> Accessed 4/25/09]]></text>
+      </p>
+      <p>
+        <text><![CDATA[[3]Department of Mathematics, University of Melbourne. Dijkstra’s Algorithm.<http://www.ms.unimelb.edu.au/~moshe/620-261/dijkstra/dijkstra.html > Accessed 4/25/09]]></text>
+      </p>
+      <p>
+        <text><![CDATA[[4]http://en.wikipedia.org/wiki/Linkstate_routing_protocol]]></text>
+      </p>
+      <p>
+        <text><![CDATA[[5]https://www.google.com/?gws_rd=ssl]]></text>
+      </p>
+      <p>
+        <text><![CDATA[[6]https://docs.oracle.com/javase/tutorial/deployment/applet/getStarted.html]]></text>
+      </p>
+      <p>
+        <text><![CDATA[[7] http://reference.wolfram.com/language/Combinatorica/ref/Dijkstra.html]]></text>
+      </p>
+      <p>
+        <text><![CDATA[[8]http://www.danscourses.com/CCNA-2/link-state-routing-protocols.html]]></text>
+      </p>
+    </object>
+    <object id="35" type="shape" x="36217.09034029663" y="50488.24086295562" r="6.837980855582982" s="146.80512062509925" class="line5">
+      <geom type="arrow">
+        <sp>-779.5494033586223 -222.5961853538921</sp>
+        <ep>779.5494033586222 -222.5961853538921</ep>
+        <b>445.1923707077842</b>
+        <t>10</t>
+      </geom>
+    </object>
+    <object id="36" type="shape" x="143312.7475783021" y="18120.91423677923" r="40.77644430824132" s="104.86080044649962" class="line3">
+      <geom type="line">
+        <sp>122.55108653660986 0</sp>
+        <ep>-122.55108653660986 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="37" type="shape" x="156627.5117454188" y="-2187.6418188473062" r="-16.926631740697818" s="74.90057174749965" class="line3">
+      <geom type="line">
+        <sp>-311.98041741232277 0</sp>
+        <ep>311.98041741232277 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="38" type="shape" x="164801.25819469668" y="-21891.205010861006" r="24.984219469744986" s="74.90057174749968" class="line3">
+      <geom type="line">
+        <sp>204.0097295852216 0</sp>
+        <ep>-204.0097295852216 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="39" type="shape" x="146552.76742542902" y="-45146.14983843689" r="92.83702942076184" s="74.90057174749968" class="line3">
+      <geom type="line">
+        <sp>146.63722339621333 0</sp>
+        <ep>-146.63722339621336 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="40" type="shape" x="169615.35278449673" y="8711.762489605873" r="-56.00031428218879" s="74.90057174749965" class="line3">
+      <geom type="line">
+        <sp>-265.40828584748135 0</sp>
+        <ep>265.40828584748135 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="41" type="shape" x="177432.80934530406" y="-4813.559580536877" r="80.94187650084359" s="74.90057174749971" class="line3">
+      <geom type="line">
+        <sp>424.97426631438316 297.79495396884244</sp>
+        <ep>-424.9742663143833 297.7949539688423</ep>
+        <b>595.5899079376848</b>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="42" type="shape" x="27485.57437277551" y="-66117.52541443748" r="-40.40324462511673" s="104.8608004464997" class="line3">
+      <geom type="line">
+        <sp>353.92457727913 63.05899166723925</sp>
+        <ep>-353.92457727912995 63.058991667239184</ep>
+        <b>126.11798333447842</b>
+        <t>8</t>
+      </geom>
+    </object>
+    <object id="3_20134445" type="text" x="147124.58066189598" y="-60420.983425286504" r="-179.66968517041002" s="0.5" class="head">
+      <height>55.1953125</height>
+      <width>-266.671875</width>
+      <p>
+        <text><![CDATA[NODES CONNECTED( )]]></text>
+      </p>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+    </object>
+    <object id="5_20134445" type="text" x="147195.5" y="-59913.9" r="-90.60551189180573" s="0.24539899984152572" class="head">
+      <height>27.59765625</height>
+      <width>-291.10546875</width>
+      <p>
+        <text><![CDATA[SHORTEST PATH FOUND]]></text>
+      </p>
+    </object>
+    <object id="6_20134445" type="text" x="147207.25" y="-59921.4" r="-90.60551189180573" s="0.21939709758856246" class="body">
+      <height>55.1953125</height>
+      <width>325.76953125</width>
+      <p>
+        <text><![CDATA[OPTIMAL DISTANCE CALCULTED]]></text>
+      </p>
+    </object>
+    <object id="8_20134445" type="shape" x="138483.47222166063" y="-12096.056449074891" r="-63.976638234811446" s="104.8608004464997" class="line3">
+      <geom type="line">
+        <sp>-152.41979142337394 0</sp>
+        <ep>152.41979142337397 0</ep>
+        <t>8</t>
+      </geom>
+    </object>
+  </zui-table>
+  <background>
+    <layer depth="145.4681687764076" fadescale="0.015123583520058737">
+      <object id="background854270637" type="image" x="-112597.53230286957" y="-20518.051157432492" r="0" s="163.64095606774276">
+        <source w="4500" h="2500">854270637<url>854270637.png</url></source>
+        <resource>
+          <id>854270637</id>
+          <url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/6/b/e4a97b503d1c2a76e329b6ee0a38ea59d3061.png</url>
+        </resource>
+        <sourceUrl>Comp 1_17.png</sourceUrl>
+      </object>
+    </layer>
+  </background>
+  <path>
+    <s>
+      <eagle o="1_24309637"/>
+    </s>
+    <s>
+      <eagle o="2_20134445"/>
+    </s>
+    <s>
+      <eagle o="0_30863873"/>
+    </s>
+    <s>
+      <eagle o="0_20134445"/>
+    </s>
+    <s>
+      <eagle o="1_20134445"/>
+    </s>
+    <s>
+      <eagle o="9_24309637"/>
+    </s>
+    <s>
+      <eagle o="4_24309637"/>
+    </s>
+    <s>
+      <eagle o="0_24309637"/>
+    </s>
+    <s>
+      <eagle o="3_24309637"/>
+    </s>
+    <s>
+      <eagle o="66_24309637"/>
+    </s>
+    <s>
+      <eagle o="1"/>
+    </s>
+    <s>
+      <eagle o="10_24309637"/>
+    </s>
+    <s>
+      <eagle o="10"/>
+    </s>
+    <s>
+      <eagle o="11"/>
+    </s>
+    <s>
+      <eagle o="12"/>
+    </s>
+    <s>
+      <eagle o="32"/>
+    </s>
+    <s>
+      <eagle o="25"/>
+    </s>
+    <s>
+      <eagle o="22"/>
+    </s>
+    <s>
+      <eagle o="21"/>
+    </s>
+    <s>
+      <eagle o="20"/>
+    </s>
+    <s>
+      <eagle o="19"/>
+    </s>
+    <s>
+      <eagle o="4_20134445"/>
+    </s>
+    <s>
+      <eagle o="24"/>
+    </s>
+  </path>
+  <style type="text/css"><![CDATA[
+@font-face
+{
+	src: url('Arimo-Regular.keg');
+	fontFamily: body;
+	font-class: body;
+	font-style: normal;
+	font-weight: normal;
+	font-family: Arimo;
+}
+
+@font-face
+{
+	src: url('Arimo-Bold.keg');
+	fontFamily: head;
+	font-class: head;
+	font-style: normal;
+	font-weight: bold;
+	font-family: Arimo;
+}
+
+@font-face
+{
+	src: url('Arimo-BoldItalic.keg');
+	fontFamily: strong;
+	font-class: strong;
+	font-style: italic;
+	font-weight: bold;
+	font-family: Arimo;
+}
+
+@font-face
+{
+	src: url('Arimo-Italic.keg');
+	font-style: italic;
+	font-weight: normal;
+	font-family: Arimo;
+}
+
+.line1
+{
+	borderColor: #000;
+	color: #000;
+	gradEndColor: #000;
+	gradStartColor: #000;
+}
+
+.line2
+{
+	borderColor: #3d72d4;
+	color: #3d72d4;
+	gradEndColor: #3d72d4;
+	gradStartColor: #3d72d4;
+}
+
+.line3
+{
+	borderColor: #fff;
+	color: #fff;
+	gradEndColor: #fff;
+	gradStartColor: #fff;
+}
+
+.line4
+{
+	borderColor: #2150ba;
+	color: #2150ba;
+	gradEndColor: #2150ba;
+	gradStartColor: #2150ba;
+}
+
+.line5
+{
+	borderColor: #bf4d98;
+	color: #bf4d98;
+	gradEndColor: #bf4d98;
+	gradStartColor: #bf4d98;
+}
+
+.poly1
+{
+	borderColor: #000;
+	borderThickness: 0;
+	color: #4f98e8;
+	gradEndAlpha: .6;
+	gradEndColor: #000;
+	gradStartAlpha: .6;
+	gradStartColor: #000;
+}
+
+.poly2
+{
+	borderColor: #3d72d4;
+	borderThickness: 9;
+	color: #4f98e8;
+	gradEndColor: #3d72d4;
+	gradStartColor: #3d72d4;
+}
+
+.poly3
+{
+	borderColor: #fff;
+	borderThickness: 0;
+	color: #4f98e8;
+	gradEndColor: #fff;
+	gradStartColor: #fff;
+}
+
+.poly4
+{
+	borderColor: #2150ba;
+	borderThickness: 0;
+	color: #4f98e8;
+	gradEndColor: #2150ba;
+	gradStartColor: #2150ba;
+}
+
+.poly5
+{
+	borderColor: #bf4d98;
+	borderThickness: 9;
+	color: #4f98e8;
+	gradEndColor: #bf4d98;
+	gradStartColor: #bf4d98;
+}
+
+Background
+{
+	gradEnd: #5771d6;
+	gradStart: #48c0fb;
+}
+
+Grid
+{
+	color: #3a70ac;
+}
+
+ZArrow
+{
+	borderAlpha: 0;
+	borderColor: #fff;
+	borderThickness: 0;
+	gradEndAlpha: 0;
+	gradEndColor: #fff;
+	gradStartAlpha: 1;
+	gradStartColor: #fff;
+	thickness: 10;
+}
+
+ZCircle
+{
+	borderAlpha: 0;
+	gradEndAlpha: 1;
+	gradStartAlpha: 1;
+	lockTintAlpha: 0;
+	radius: 0;
+	thickness: 100;
+}
+
+ZCurveLine
+{
+	color: #fff;
+}
+
+ZFrame.bracket
+{
+	borderAlpha: 0;
+	borderColor: #000;
+	borderThickness: 0;
+	gradEndAlpha: 1;
+	gradEndColor: #fff;
+	gradStartAlpha: 1;
+	gradStartColor: #fff;
+	lockTintAlpha: 0;
+	thickness: 8;
+}
+
+ZFrame.circle
+{
+	borderAlpha: 0;
+	borderColor: #000;
+	borderThickness: 0;
+	gradEndAlpha: 1;
+	gradEndColor: #fff;
+	gradStartAlpha: 1;
+	gradStartColor: #fff;
+	lockTintAlpha: 0;
+	thickness: 8;
+}
+
+ZFrame.roundrect
+{
+	borderAlpha: 1;
+	borderColor: #fff;
+	borderThickness: 6;
+	gradEndAlpha: 0;
+	gradEndColor: #fff;
+	gradStartAlpha: 0;
+	gradStartColor: #fff;
+	lockTintAlpha: 0;
+	radius: 13;
+	thickness: 8;
+}
+
+ZLabel
+{
+	lockTintAlpha: 0.15;
+	padding: 1.2;
+}
+
+ZLabel.body
+{
+	color: #fff;
+	fontFamily: body;
+}
+
+ZLabel.body-background
+{
+	background-alpha: 0.65;
+	background-color: #000;
+	background-padding: 20;
+}
+
+ZLabel.head
+{
+	color: #fff;
+	fontFamily: head;
+}
+
+ZLabel.head-background
+{
+	background-alpha: 0.9;
+	background-color: #bf4d98;
+	background-padding: 4;
+}
+
+ZLabel.strong
+{
+	color: #fff;
+	fontFamily: strong;
+}
+
+ZLabel.strong-background
+{
+	background-alpha: 0.9;
+	background-color: #2150ba;
+	background-padding: 4;
+}
+
+ZLine
+{
+	color: #fff;
+}
+
+ZMarker
+{
+	alpha: 0.95;
+	color: #bf4d98;
+}
+
+ZPath
+{
+	alpha: 1;
+	color: #40abe6;
+	textColor: #fff;
+	thickness: 3;
+}
+
+ZPath Ball.base
+{
+	alpha: 1;
+	fillColor: #40abe6;
+	radius: 12;
+}
+
+ZPath Ball.mid
+{
+	alpha: .5;
+	fillColor: #40abe6;
+	radius: 8;
+}
+
+ZPoly
+{
+	borderAlpha: 0;
+	gradEndAlpha: 1;
+	gradStartAlpha: 1;
+	lockTintAlpha: 0;
+	radius: 0;
+	thickness: 100;
+}
+
+]]></style>
+  <hash>-469e9524</hash>
+<sync><oid>y9x_gtamiqpa</oid><title>link-state-routing-protocol</title><hash>-469e9524</hash></sync><config>lPWomP5KMK6sBKgKEoViQL2l/u4er+ExkgvFkyBaHxKF4oBRnfE/DacX4CdhDLC5KC70FKH0g+6FwhxNuRrEv8JuGBZ9wrLxs8a9F+tTtpo8dzsjUOF40+61t5kTDVySDIvots0LSIKPZYm7bQ43QkieE33d4mDEDjFZci0YqlhFq+CUyQ2e6aUs+073tYTmn+Vv77APOUfnyv89N66sFYD2surSBaLZN1rLxaDziRqA0samak4T0XZ2DqtKLpOcaFSMfn2cvCF7hA43PGBfuQMWIr7/nvOd6PvmWzXavtYE858m33HQytqIqaVqTo7su9smEM2VmG32hUuMid61NA==</config></zuiprezi>
